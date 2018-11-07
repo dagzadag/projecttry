@@ -1,0 +1,312 @@
+/*RESET CSS BEGIN*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+
+/*HELPER CLASS END*/
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    color: white;
+}
+
+header.stick{
+    background-color: rgba(44, 62, 80,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-200%);
+    transition: 0.3s;
+}
+.scroll header.stick{
+    transform: translateY(0);
+}
+.nav-wrap{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-wrap ul li {
+    padding: 0 5px;
+    margin: 0;
+    display: inline-block;
+}
+
+.nav-wrap ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Noto Kufi Arabic', sans-serif; 
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+
+}
+.logo a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poor Story', sans-serif; 
+}
+.nav-wrap ul li a:hover{
+    color: #27ae60;
+    border-bottom: 2px solid #27ae60;
+}
+/************************responsive ***************/ 
+@media only screen and (min-width: 600px) {
+    .description{
+      margin-top: 15vh;
+    }
+    .head-content{
+      display: flex;
+    }
+    .row-col-md{
+      width: 33%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+}
+/************************end responsive******************/
+/*******************************************************description*******/
+.main-cover {
+  background-image:  url("../images/geek.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+.container{
+   background-color:  rgba(0,0,0,0.5);
+   height: 80vh;
+}
+
+.description{
+  font-family: 'Noto Kufi Arabic', sans-serif; 
+  direction: rtl;
+  text-align: center;
+}
+ul li.title{
+  line-height: normal;
+  font-size: 50px; 
+}
+ul li.short{
+  text-shadow: 2px 2px #2c3e50;
+  line-height: normal;
+  font-size: 25px; 
+}
+.description a{
+ text-decoration: none;
+ border:2px solid white;
+ padding: 7px;
+ transition: 0.5s;
+ margin: 0 15px;
+ background-color: #27ae60;
+}
+.description ul {
+    margin-bottom: 30px;
+}
+.description a:hover{
+ background-color: rgba(0,0,0,0.9);
+  
+}
+/*****************end section one ************/
+/****************start section body content ******/
+.body-content{
+  background-color: #2c3e50;
+  margin: auto;
+}
+.head-content{
+  text-align: center;
+}
+.row-col-md{
+     font-size: 22px;
+}
