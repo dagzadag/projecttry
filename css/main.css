@@ -250,19 +250,30 @@ header.stick{
 }
 @media only screen and (min-width:790px) {
   /* For tablets: */
-  .body-content {
-     display: flex;
+  .row-col-md.center {
+    margin-top: 30px;
+  }
+  .row-col-md{
+    width: 28%;
   }
 }
 @media only screen and (max-width:790px) {
-  .row-col-md {
-    margin: 0;
-     width: 40%;
+  .row-col-md{
+   width :40%;
   }
   .body-content {
-     display: inline;
+    justify-content: space-around;
   }
- 
+  .row-col-md.center {
+    margin-top: 0px
+  }
+
+}
+@media only screen and (max-width:500px) {
+  .row-col-md{
+   width :50%;
+  }
+
 }
 /************************end responsive******************/
 /*******************************************************description*******/
@@ -321,10 +332,21 @@ ul li.short{
   font-family: 'Noto Kufi Arabic', sans-serif; 
 }
 .body-content{
+  /****flex test****/
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  /****test****/
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 90%;
   margin: auto;
 }
 .row-col-md{
+  
   margin: 0 15px ;
   text-align: center;
   font-size: 22px;
@@ -365,9 +387,7 @@ ul li.short{
 .row-col-md h2 {
   margin-bottom: 15px;
 }
-.row-col-md.center {
-  margin-top: 30px;
-}
+
 .row-content{
 
 }
