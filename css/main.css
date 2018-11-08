@@ -246,15 +246,8 @@ header.stick{
     .description{
       margin-top: 15vh;
     }
-    .head-content{
-      display: flex;
-    }
-    .row-col-md{
-      width: 33%;
-    }
 }
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: 970px){
 }
 /************************end responsive******************/
 /*******************************************************description*******/
@@ -286,10 +279,10 @@ ul li.short{
 .description a{
  text-decoration: none;
  border:2px solid white;
- padding: 7px;
+ padding: 7px 25px;
  transition: 0.5s;
  margin: 0 15px;
- background-color: #27ae60;
+ background-color: transparent;
 }
 .description ul {
     margin-bottom: 30px;
@@ -300,13 +293,65 @@ ul li.short{
 }
 /*****************end section one ************/
 /****************start section body content ******/
-.body-content{
-  background-color: #2c3e50;
-  margin: auto;
+.content *{
+  color: #2c3e50;
 }
 .head-content{
   text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.head-content h2{
+  font-size: 22px;
+  font-family: 'Noto Kufi Arabic', sans-serif; 
+}
+.body-content{
+  width: 80%;
+  margin: auto;
 }
 .row-col-md{
-     font-size: 22px;
+  width: 33.3%;
+  font-size: 22px;
+  font-family: 'Noto Kufi Arabic', sans-serif; 
+} 
+
+.row-col-md img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.dash{
+
+  height: 4px;
+  background: #27ae60;
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+.bio {
+    font-family: 'Noto Kufi Arabic', sans-serif; 
+    display: flex;
+    font-size: 10px;
+    direction: rtl;
+    align-items: center;
+}
+.bio ul li{
+  margin: 3px ;
+  text-align: right;
+  font-size: 14px;
+}
+.bio-aside{
+ width:100%;
+}
+.head-content img{
+  box-shadow: 2px 2px rgba(0,0,0,0.5);
+  border-radius: 50%;
+}
+.row-col-md h2 {
+  margin-bottom: 15px;
+}
+.row-col-md.center {
+  margin-top: 30px;
+}
+.row-content{
+
 }
