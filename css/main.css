@@ -250,7 +250,9 @@ header.stick{
 }
 @media only screen and (min-width:790px) {
   /* For tablets: */
- 
+ .col-sam{
+  width: 50%;
+}
   .row-col-md{
     width: 28%;
   }
@@ -314,11 +316,17 @@ ul li.short{
   color: #2c3e50;
 }
 .head-content{
+  direction: rtl;
+  display: flex;
+   -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   text-align: center;
   width: 90%;
   margin: auto;
 }
 .head-content h2{
+  text-align: center;
+  padding-bottom: 10px;
   font-size: 22px;
   font-family: 'Noto Kufi Arabic', sans-serif; 
 }
@@ -357,18 +365,17 @@ ul li.short{
 }
 .bio {
     font-family: 'Noto Kufi Arabic', sans-serif; 
-    display: flex;
     font-size: 10px;
     direction: rtl;
-    align-items: center;
 }
 .bio ul li{
   margin: 3px ;
   text-align: right;
   font-size: 14px;
 }
-.bio-aside{
- width:100%;
+.bio-head{
+  display: flex;
+  align-items: center;
 }
 .head-content img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -379,6 +386,7 @@ ul li.short{
 }
 
  a.btn-prices{
+  font-size: 17px;
   text-decoration: none;
   padding: 2px 20px;
   color: white;
@@ -405,13 +413,71 @@ div.headline {
   margin: auto;
 }
 .project{
+  vertical-align: middle;
   width: 100%;
   display: flex;
 }
 .content-projects , .img-proj{
-  width: 50%;
+  line-height: normal;
+  text-align: center;
+ 
 } 
+.img-proj{
+  width: 30%;
+}
+.content-projects{
+   width: 60%;
+}
 .img-proj img{
   width: 100%;
   height: 100%;
+}
+.middle-text{
+  width: 100%;
+  background: #bdc3c7;
+  margin: auto; 
+  box-sizing: border-box;
+}
+.middle-text * {
+  line-height: normal;
+  color: #2c3e50;
+  text-align: center;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.middle-text div {
+  width: 80%;
+  margin: auto;
+}
+.middle-text h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+.contact{
+  padding: 10px;
+}
+.contact-footer {
+  font-size: 17px;
+  text-align: right;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  margin: 0 auto;
+  direction: ltr;
+}
+.contact-footer p {
+  margin: 2px;
+  font-size: 14px;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.contact-footer h2{
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.contact-footer a{
+  color: #2e86de;
+}
+footer{
+  text-align: center;
+  background: #2c3e50;
 }
