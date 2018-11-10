@@ -273,17 +273,19 @@ header.stick{
   margin:  5px 0 ;
 }
 .contact input:nth-child(2){
+  background: #27ae60;
   transition: 0.3s;
   padding:   2px 22px ;
-  border: white;
+  border: 1px solid transparent;
 }
 .contact input:nth-child(2):hover{
-  background: #27ae60;
-  border: white;
+  background: transparent;
+  color: #fff;
+  border: 1px solid white;
 }
 .project{
   cursor: pointer;
-  margin: 10px 0 ;
+  margin-top: 10px;
   align-items: center;
   width: 100%;
   display: flex;
@@ -296,22 +298,22 @@ header.stick{
   font-size: 16px;
 }
 .blog {
-    background-image: url('../images/proj1.png');
+    background-image: url('../images/project5.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 .skew{
-  width: 450px;
-  background: rgba(255,255,255,0.7);
-  transform: skew(20deg);
+  background: rgba(255,255,255,0.8);
+  
 }
 .ourprojects{
   
-  transform: skew(-20deg);
+  
   color: #2c3e50;
   font-family: 'Noto Kufi Arabic', sans-serif; 
   direction: rtl;
-  width: 500px;
+ 
 }
 .ourprojects h1{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -324,6 +326,21 @@ header.stick{
 .project p{
    font-size: 14px;
 }
+
+@media only screen and (min-width:790px) {
+  .skew{
+    position: relative;
+    left: -70px;
+    width: 550px;
+    transform: skew(20deg);
+  }
+  .ourprojects{
+    position: relative;
+    transform: skew(-20deg);
+    right:   -70px;
+    width: 500px;
+  }
+} 
 @media only screen and (max-width:700px) {
   .contact{
     width: 80%;
@@ -338,6 +355,7 @@ header.stick{
   .row-col-md{
    width :51%;
   }
+  
 }
 /************************end responsive******************/
 /*******************************************************description*******/
@@ -387,12 +405,13 @@ ul li.short{
   color: #2c3e50;
 }
 .head-content{
+  background-color: rgba(255,255,255,0.8);
   direction: rtl;
   display: flex;
    -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   text-align: center;
-  width: 90%;
+  padding: 10px;
   margin: auto;
 }
 .head-content h2{
@@ -498,9 +517,12 @@ div.headline {
 }
 .middle-text{
   width: 100%;
-  background: #ffffff;
+  background: rgba(255,255,255,0.8);
   margin: auto; 
   box-sizing: border-box;
+}
+.middle-text{
+  padding-bottom: 10px;
 }
 .middle-text * {
   line-height: normal;
@@ -572,6 +594,7 @@ footer{
   padding: 0 20px;
 }
 .messege input[type="submit"]:hover{
+  color: #fff;
   background-color: transparent;
   border: 1px solid white;
 }
