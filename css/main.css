@@ -281,9 +281,56 @@ header.stick{
   background: #27ae60;
   border: white;
 }
+.project{
+  cursor: pointer;
+  margin: 10px 0 ;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  transition: 0.4s;
+}
+.project:hover{
+ box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project h2{
+  font-size: 16px;
+}
+.blog {
+    background-image: url('../images/proj1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.skew{
+  width: 450px;
+  background: rgba(255,255,255,0.7);
+  transform: skew(20deg);
+}
+.ourprojects{
+  
+  transform: skew(-20deg);
+  color: #2c3e50;
+  font-family: 'Noto Kufi Arabic', sans-serif; 
+  direction: rtl;
+  width: 500px;
+}
+.ourprojects h1{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 8px 20px;
+  width: 50%;
+  margin: auto;
+  font-size: 22px;
+  text-align: center;
+}
+.project p{
+   font-size: 14px;
+}
 @media only screen and (max-width:700px) {
   .contact{
     width: 80%;
+  }
+  .ourprojects{
+    width: 100%;
+    padding: 6px;
   }
 }
 
@@ -291,7 +338,6 @@ header.stick{
   .row-col-md{
    width :51%;
   }
-
 }
 /************************end responsive******************/
 /*******************************************************description*******/
@@ -388,6 +434,12 @@ ul li.short{
   margin: 10px auto;
   border-radius: 50%;
 }
+.break{
+  height: 4px;
+  margin: 10px auto;
+
+}
+
 .bio {
     font-family: 'Noto Kufi Arabic', sans-serif; 
     font-size: 10px;
@@ -430,36 +482,23 @@ div.headline {
   border-radius:  50%;
 }
 /*******************************projects************/
-.ourprojects{
-  color: #2c3e50;
-  font-family: 'Noto Kufi Arabic', sans-serif; 
-  direction: rtl;
-  width: 80%;
-  margin: auto;
-}
-.project{
-  vertical-align: middle;
-  width: 100%;
-  display: flex;
-}
+
 .content-projects , .img-proj{
   line-height: normal;
-  text-align: center;
+  text-align: right;
  
 } 
-.img-proj{
-  width: 30%;
-}
-.content-projects{
-   width: 60%;
-}
+
+
 .img-proj img{
-  width: 100%;
-  height: 100%;
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 .middle-text{
   width: 100%;
-  background: #bdc3c7;
+  background: #ffffff;
   margin: auto; 
   box-sizing: border-box;
 }
@@ -504,4 +543,41 @@ div.headline {
 footer{
   text-align: center;
   background: #2c3e50;
+}
+.messege ,.contact-message{
+  width:50%;
+}
+.messege{
+  direction: rtl;
+  float: right;
+}
+.messege form{
+  
+  text-align: center;
+  
+}
+.messege *{
+  font-size: 14px;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.messege input[type="email"],textarea{
+
+  width: 100%;
+  margin:  2px 0;
+}
+.messege input[type="submit"]{
+  transition: 0.3s;
+  border: 1px solid transparent;
+  background-color: #27ae60;
+  padding: 0 20px;
+}
+.messege input[type="submit"]:hover{
+  background-color: transparent;
+  border: 1px solid white;
+}
+.contact-message{
+  float: left;
+}
+.contact-footer div{
+  padding: 5px;
 }
