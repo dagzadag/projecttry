@@ -262,6 +262,31 @@ header.stick{
    width :40%;
   }
 }
+.contact{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  margin: auto;
+  direction: rtl;
+  width: 50%;
+}
+.contact input{
+  margin:  5px 0 ;
+}
+.contact input:nth-child(2){
+  transition: 0.3s;
+  padding:   2px 22px ;
+  border: white;
+}
+.contact input:nth-child(2):hover{
+  background: #27ae60;
+  border: white;
+}
+@media only screen and (max-width:700px) {
+  .contact{
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width:500px) {
   .row-col-md{
    width :51%;
@@ -453,9 +478,8 @@ div.headline {
   font-weight: bold;
   text-align: center;
 }
-.contact{
-  padding: 10px;
-}
+
+
 .contact-footer {
   font-size: 17px;
   text-align: right;
